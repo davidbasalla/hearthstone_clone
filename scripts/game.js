@@ -2,8 +2,8 @@ var Game = function (width, height) {
   this.width = width;
   this.height = height;
 
-  this.player1 = new Player("David", 1);
-  this.player2 = new Player("Marian", 2);
+  this.player1 = new Player("David", 1, new Deck());
+  this.player2 = new Player("Marian", 2, new Deck());
 
   this.turn_duration = 2000;
 };
